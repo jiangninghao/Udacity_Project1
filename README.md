@@ -50,6 +50,6 @@ def create_dummy_df(df, cat_cols, dummy_na):
 ## Summary 
 To answer the first two questions, data wrangling was applied to 1) convert targeted columns to the right format, 2) filled NAN files with 0s and 3) merge  'Calendar' and 'Review' dataset. It turned out that: 
   - Listing ID 208356 has the highest reviewer counts of 474 times and lsiting ID 3308979 has highest averag price of $1301.82. 
-  - Area with zipcod of 98146 has the highest average rating of 98.0
+  - Area with zipcode of 98146 has the highest average rating of 98.0
 
-To answer my 3rd question, I narrowed down the 'listing' data to a specific set and ran a correlation analysis to determine the most relevant features to pricing. Features including acocmandtes, bedrooms, beds, and bathrooms were identified and used in the pricing prediciton model. 
+To answer my 3rd question, I narrowed down the 'listing' data to a specific set (based on data content and business knowleddge) and ran a correlation analysis to determine the most relevant features to pricing. Features including acocmandtes, bedrooms, beds, and bathrooms were identified and used in the pricing prediciton model. 
