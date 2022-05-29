@@ -1,5 +1,10 @@
 # Udacity_Project1
-This is for the first project in Udacity Data Scientist nanodegree
+This is for the first project in Udacity Data Scientist nanodegree. Below is the table of contents for this file: 
+1. Motivation of the project
+2. Python library list
+3. Dataset description
+4. Functions applied 
+5. Summary of the findings
 
 ## Motivation of the project 
 
@@ -10,11 +15,10 @@ As a seasoned analytical professional yet a novice data science practioner, this
 
 ## Python Library 
 ```python
-
-import numpy as np 
-import pandas as pd 
-import matplotlib.pyplot as plt 
-import seaborn as sns
+- numpy
+- pandas
+- matplotlib
+- seaborn
 
 ```
 
@@ -28,22 +32,11 @@ The third dataset, which is the biggest dataset out of the three and the main da
 ## Fucntion used 
 ```python 
 
-# The first function used is to covnert the price from string to float, which later is used for avergae pricing calculation 
+Two functions were used in this project
 
-def clean_currency(x): 
-  if isinstance(x, str): 
-    return(x.replace('$', '').replace(',', '')
-  return(x)
+# The first function used is to covnert the price from string to float, which is used for avergae pricing calculation 
 
 # The second funciton used is to treat the categorical columns
-
-def create_dummy_df(df, cat_cols, dummy_na):
-  for col in cat_cols_list:
-    try: 
-      df = pd.concat([df.drop(col, axis=1), pd.get_dummies(df[col], prefix_sep='_', drop_first=True, dummy_na=dummy_na)], axis=1)
-    except:
-      continue
-  return df 
   
 ```
 
@@ -52,4 +45,4 @@ To answer the first two questions, data wrangling was applied to 1) convert targ
   - Listing ID 208356 has the highest reviewer counts of 474 times and lsiting ID 3308979 has highest averag price of $1301.82. 
   - Area with zipcode of 98146 has the highest average rating of 98.0
 
-To answer my 3rd question, I narrowed down the 'listing' data to a specific set (based on data content and business knowleddge) and ran a correlation analysis to determine the most relevant features to pricing. Features including acocmandtes, bedrooms, beds, and bathrooms were identified and used in the pricing prediciton model. 
+To answer my 3rd question, I narrowed down the 'listing' data to a specific set (based on data content and business knowledge) and ran a correlation analysis to determine the most relevant features to pricing. Features including acocmandtes, bedrooms, beds, and bathrooms were identified and used in the pricing prediciton model. 
