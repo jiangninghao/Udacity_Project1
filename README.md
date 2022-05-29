@@ -14,34 +14,32 @@ As a seasoned analytical professional yet a novice data science practioner, this
 3. If I want to predict the pricing, what are the most relevant features to use? 
 
 ## Python Library 
-```python
 - numpy
 - pandas
 - matplotlib
 - seaborn
 
-```
-
 ## Dataset description 
 
 The first dataset named 'calendar' provides the time-series information of availability and pricing for each listing id over one year. 
 The second dataset named 'reviews' provideds info on the counts of review per listing id. 
-Combining these 2 datasets will allow us to figure out which listing id has the highest average pricing or the highest reviewer counts. 
+Combining these 2 datasets will allow us to figure out which listing id/zipcode has the highest average pricing or the highest reviewer counts. 
 The third dataset, which is the biggest dataset out of the three and the main dataset used for pricing predicting, is the listing. It provides key info, such as property details (e.g., # of bedroom, # of bathroom, # of beds, etc.), neighborhood detail, reviewer ratings by type, etc. 
 
 ## Fucntion used 
-```python 
-
 Two functions were used in this project
 
 # The first function used is to covnert the price from string to float, which is used for avergae pricing calculation 
 
 # The second funciton used is to treat the categorical columns
-  
-```
 
 ## Summary 
-To answer the first two questions, data wrangling was applied to 1) convert targeted columns to the right format, 2) filled NAN files with 0s and 3) merge  'Calendar' and 'Review' dataset. It turned out that: 
+To answer the first two questions, data wrangling was applied to 
+1) convert targeted columns to the right format
+2) filled NAN files with 0s 
+3) merge  'Calendar' and 'Review' dataset. 
+
+It turned out that: 
   - Listing ID 208356 has the highest reviewer counts of 474 times and lsiting ID 3308979 has highest averag price of $1301.82. 
   - Area with zipcode of 98146 has the highest average rating of 98.0
 
