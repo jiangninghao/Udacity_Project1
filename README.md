@@ -3,7 +3,7 @@ This is for the first project in Udacity Data Scientist nanodegree. Below is the
 1. Motivation of the project
 2. Python library list
 3. Data source
-4. Dataset description
+4. File description
 5. Functions applied 
 6. Summary of the results
 
@@ -24,19 +24,17 @@ As a seasoned analytical professional yet a novice data science practioner, this
 
 Data obtained from Seattle Airbnb Open data available on Kaggle (https://www.kaggle.com/datasets/airbnb/seattle)
 
-## Dataset description 
+## File description 
 
-The first dataset named 'calendar' provides the time-series information of availability and pricing for each listing id over one year. 
-The second dataset named 'reviews' provideds info on the counts of review per listing id. 
-Combining these 2 datasets will allow us to figure out which listing id/zipcode has the highest average pricing or the highest reviewer counts. 
-The third dataset, which is the biggest dataset out of the three and the main dataset used for pricing predicting, is the listing. It provides key info, such as property details (e.g., # of bedroom, # of bathroom, # of beds, etc.), neighborhood detail, reviewer ratings by type, etc. 
+Seatle Airbnb.zip contains 3 csv files: 
+- calendar.csv:  provides the time-series information of availability and pricing for each listing id over one year. 
+- reviews.csv: provideds info on the counts of review per listing id. 
+- listing.csv: the biggest dataset out of the three and the main dataset used for pricing predicting, is the listing. It provides key info, such as property details (e.g., # of bedroom, # of bathroom, # of beds, etc.), neighborhood detail, reviewer ratings by type, etc. 
 
 ## Fucntion used 
-Two functions were used in this project
-
-# The first function used is to covnert the price from string to float, which is used for avergae pricing calculation 
-
-# The second funciton used is to treat the categorical columns
+Two functions were used in this project.
+The first function used is to covnert the price from string to float, which is used for avergae pricing calculation 
+The second funciton used is to treat the categorical columns
 
 ## Summary of the results
 To answer the first two questions, data wrangling was applied to 
@@ -51,3 +49,6 @@ It turned out that:
 To answer my 3rd question, I narrowed down the 'listing' data to a specific set (based on data content and business knowledge) and ran a correlation analysis to determine the most relevant features to pricing. Features including acocmandtes, bedrooms, beds, and bathrooms were identified and used in the pricing prediciton model. 
 
 More detailed summary is posted in my Medium blog (https://medium.com/@jiangninghao/lessons-learned-from-my-first-data-science-project-f5b4db773c38)
+
+## Acknowledgements
+This dataset is part of Airbnb inside. 
