@@ -2,9 +2,10 @@
 This is for the first project in Udacity Data Scientist nanodegree. Below is the table of contents for this file: 
 1. Motivation of the project
 2. Python library list
-3. Dataset description
-4. Functions applied 
-5. Summary of the findings
+3. Data source
+4. Dataset description
+5. Functions applied 
+6. Summary of the results
 
 ## Motivation of the project 
 
@@ -18,6 +19,10 @@ As a seasoned analytical professional yet a novice data science practioner, this
 - pandas
 - matplotlib
 - seaborn
+
+## Data Source
+
+Data obtained from Seattle Airbnb Open data available on Kaggle (https://www.kaggle.com/datasets/airbnb/seattle)
 
 ## Dataset description 
 
@@ -33,7 +38,7 @@ Two functions were used in this project
 
 # The second funciton used is to treat the categorical columns
 
-## Summary 
+## Summary of the results
 To answer the first two questions, data wrangling was applied to 
 1) convert targeted columns to the right format
 2) filled NAN files with 0s 
@@ -44,3 +49,5 @@ It turned out that:
   - Area with zipcode of 98146 has the highest average rating of 98.0
 
 To answer my 3rd question, I narrowed down the 'listing' data to a specific set (based on data content and business knowledge) and ran a correlation analysis to determine the most relevant features to pricing. Features including acocmandtes, bedrooms, beds, and bathrooms were identified and used in the pricing prediciton model. 
+
+More detailed summary is posted in my Medium blog (https://medium.com/@jiangninghao/lessons-learned-from-my-first-data-science-project-f5b4db773c38)
