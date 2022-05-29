@@ -1,7 +1,7 @@
 # Udacity_Project1
 This is for the first project in Udacity Data Scientist nanodegree. Below is the table of contents for this file: 
 1. Motivation of the project
-2. Python library list
+2. Python library used
 3. Data source
 4. File description
 5. Functions applied 
@@ -14,19 +14,17 @@ As a seasoned analytical professional yet a novice data science practioner, this
 2. Which zipcode in the Seattle ara receives the highest average review score? 
 3. If I want to predict the pricing, what are the most relevant features to use? 
 
-## Python Library 
+## Python Library used
 - numpy
 - pandas
 - matplotlib
 - seaborn
 
 ## Data Source
-
-Data obtained from Seattle Airbnb Open data available on Kaggle (https://www.kaggle.com/datasets/airbnb/seattle)
+Data obtained from Seattle Airbnb Open data that is available on Kaggle (https://www.kaggle.com/datasets/airbnb/seattle)
 
 ## File description 
-
-Seatle Airbnb.zip contains 3 csv files: 
+Seatle_Airbnb.zip contains 3 csv files: 
 - calendar.csv:  provides the time-series information of availability and pricing for each listing id over one year. 
 - reviews.csv: provideds info on the counts of review per listing id. 
 - listing.csv: the biggest dataset out of the three and the main dataset used for pricing predicting, is the listing. It provides key info, such as property details (e.g., # of bedroom, # of bathroom, # of beds, etc.), neighborhood detail, reviewer ratings by type, etc. 
